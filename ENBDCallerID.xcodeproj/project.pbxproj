@@ -13,7 +13,35 @@
 		E9A48DB02C5B6223009C1238 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E9A48DAF2C5B6223009C1238 /* Base */; };
 		E9A48DB22C5B6224009C1238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A48DB12C5B6224009C1238 /* Assets.xcassets */; };
 		E9A48DB52C5B6224009C1238 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E9A48DB42C5B6224009C1238 /* Base */; };
+		E9A48DC32C5B62AF009C1238 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A48DC22C5B62AF009C1238 /* CallDirectoryHandler.swift */; };
+		E9A48DC72C5B62AF009C1238 /* EnbdCallerIdExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E9A48DC02C5B62AF009C1238 /* EnbdCallerIdExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E9A48DD42C5B7758009C1238 /* JSONFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A48DD32C5B7758009C1238 /* JSONFileManager.swift */; };
+		E9A48DD82C5BA232009C1238 /* JSONFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A48DD32C5B7758009C1238 /* JSONFileManager.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9A48DC52C5B62AF009C1238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9A48D9D2C5B6223009C1238 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9A48DBF2C5B62AF009C1238;
+			remoteInfo = EnbdCallerIdExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9A48DCB2C5B62AF009C1238 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E9A48DC72C5B62AF009C1238 /* EnbdCallerIdExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E9A48DA52C5B6223009C1238 /* ENBDCallerID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ENBDCallerID.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +52,21 @@
 		E9A48DB12C5B6224009C1238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9A48DB42C5B6224009C1238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9A48DB62C5B6224009C1238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A48DC02C5B62AF009C1238 /* EnbdCallerIdExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EnbdCallerIdExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9A48DC22C5B62AF009C1238 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		E9A48DC42C5B62AF009C1238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A48DD32C5B7758009C1238 /* JSONFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E9A48DA22C5B6223009C1238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9A48DBD2C5B62AF009C1238 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,7 +79,9 @@
 		E9A48D9C2C5B6223009C1238 = {
 			isa = PBXGroup;
 			children = (
+				E9A48DCE2C5B73F8009C1238 /* Data */,
 				E9A48DA72C5B6223009C1238 /* ENBDCallerID */,
+				E9A48DC12C5B62AF009C1238 /* EnbdCallerIdExtension */,
 				E9A48DA62C5B6223009C1238 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				E9A48DA52C5B6223009C1238 /* ENBDCallerID.app */,
+				E9A48DC02C5B62AF009C1238 /* EnbdCallerIdExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +109,23 @@
 			path = ENBDCallerID;
 			sourceTree = "<group>";
 		};
+		E9A48DC12C5B62AF009C1238 /* EnbdCallerIdExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E9A48DC22C5B62AF009C1238 /* CallDirectoryHandler.swift */,
+				E9A48DC42C5B62AF009C1238 /* Info.plist */,
+			);
+			path = EnbdCallerIdExtension;
+			sourceTree = "<group>";
+		};
+		E9A48DCE2C5B73F8009C1238 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E9A48DD32C5B7758009C1238 /* JSONFileManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +136,34 @@
 				E9A48DA12C5B6223009C1238 /* Sources */,
 				E9A48DA22C5B6223009C1238 /* Frameworks */,
 				E9A48DA32C5B6223009C1238 /* Resources */,
+				E9A48DCB2C5B62AF009C1238 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E9A48DC62C5B62AF009C1238 /* PBXTargetDependency */,
 			);
 			name = ENBDCallerID;
 			productName = ENBDCallerID;
 			productReference = E9A48DA52C5B6223009C1238 /* ENBDCallerID.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E9A48DBF2C5B62AF009C1238 /* EnbdCallerIdExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9A48DC82C5B62AF009C1238 /* Build configuration list for PBXNativeTarget "EnbdCallerIdExtension" */;
+			buildPhases = (
+				E9A48DBC2C5B62AF009C1238 /* Sources */,
+				E9A48DBD2C5B62AF009C1238 /* Frameworks */,
+				E9A48DBE2C5B62AF009C1238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnbdCallerIdExtension;
+			productName = EnbdCallerIdExtension;
+			productReference = E9A48DC02C5B62AF009C1238 /* EnbdCallerIdExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +176,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					E9A48DA42C5B6223009C1238 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					E9A48DBF2C5B62AF009C1238 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -116,6 +197,7 @@
 			projectRoot = "";
 			targets = (
 				E9A48DA42C5B6223009C1238 /* ENBDCallerID */,
+				E9A48DBF2C5B62AF009C1238 /* EnbdCallerIdExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +213,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9A48DBE2C5B62AF009C1238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +228,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A48DAD2C5B6223009C1238 /* ViewController.swift in Sources */,
+				E9A48DD42C5B7758009C1238 /* JSONFileManager.swift in Sources */,
 				E9A48DA92C5B6223009C1238 /* AppDelegate.swift in Sources */,
 				E9A48DAB2C5B6223009C1238 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9A48DBC2C5B62AF009C1238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9A48DC32C5B62AF009C1238 /* CallDirectoryHandler.swift in Sources */,
+				E9A48DD82C5BA232009C1238 /* JSONFileManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9A48DC62C5B62AF009C1238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9A48DBF2C5B62AF009C1238 /* EnbdCallerIdExtension */;
+			targetProxy = E9A48DC52C5B62AF009C1238 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E9A48DAE2C5B6223009C1238 /* Main.storyboard */ = {
@@ -288,13 +395,16 @@
 		E9A48DBA2C5B6224009C1238 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ENBDCallerID/ENBDCallerID.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NDWGY9K2GB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ENBDCallerID/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ENBDCallerId;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -305,7 +415,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = deadsec.ENBDCallerID;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deadsec.ENBDCallerID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -316,13 +426,16 @@
 		E9A48DBB2C5B6224009C1238 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ENBDCallerID/ENBDCallerID.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NDWGY9K2GB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ENBDCallerID/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ENBDCallerId;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -333,8 +446,62 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = deadsec.ENBDCallerID;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deadsec.ENBDCallerID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9A48DC92C5B62AF009C1238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = EnbdCallerIdExtension/EnbdCallerIdExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NDWGY9K2GB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EnbdCallerIdExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EnbdCallerIdExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deadsec.ENBDCallerID.EnbdCallerIdExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9A48DCA2C5B62AF009C1238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = EnbdCallerIdExtension/EnbdCallerIdExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NDWGY9K2GB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EnbdCallerIdExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EnbdCallerIdExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deadsec.ENBDCallerID.EnbdCallerIdExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,6 +525,15 @@
 			buildConfigurations = (
 				E9A48DBA2C5B6224009C1238 /* Debug */,
 				E9A48DBB2C5B6224009C1238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9A48DC82C5B62AF009C1238 /* Build configuration list for PBXNativeTarget "EnbdCallerIdExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9A48DC92C5B62AF009C1238 /* Debug */,
+				E9A48DCA2C5B62AF009C1238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
